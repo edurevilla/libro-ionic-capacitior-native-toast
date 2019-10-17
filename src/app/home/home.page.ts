@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Toast } from '@ionic-native/toast/ngx';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private toast: Toast) {}
+
+  mostrarToast(){
+    this.toast.show('Hola, soy un toast', '5000', 'center').subscribe(
+      toast => {
+        console.log(toast);
+      });
+  }
+ 
 
 }

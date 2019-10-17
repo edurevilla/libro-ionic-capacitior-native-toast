@@ -1,7 +1,8 @@
 {
   "name": "pruebaNative",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
